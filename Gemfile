@@ -36,8 +36,9 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-group :development do
+group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.0'
   gem 'quiet_assets'
   gem 'spring'
   gem 'mailcatcher'
